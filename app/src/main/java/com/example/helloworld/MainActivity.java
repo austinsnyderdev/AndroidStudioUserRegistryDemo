@@ -22,16 +22,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void registerBackend(int idView, int idText) {
-        //Initialize EditText object through corresponding id parameter
         TextView view = findViewById(idView);
-
-        //Initialize EditText object through corresponding id parameter
         EditText edit = findViewById(idText);
 
-        //Initailizes string with input from user
         String inputString = edit.getText().toString();
-
-        //Sets text in ViewText object
         view.setText(inputString);
     }
 }
